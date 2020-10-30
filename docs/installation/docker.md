@@ -32,7 +32,7 @@ For a full list of configurations, please refer to [BaGet's configuration](../co
 docker pull loicsharma/baget
 ```
 
-You can now run BaGet:
+You can now run BaGet, note for Windows change "$(pwd)/baget-data:/var/baget" to "baget-data:/var/baget":
 
 ```
 docker run --rm --name nuget-server -p 5555:80 --env-file baget.env -v "$(pwd)/baget-data:/var/baget" loicsharma/baget:latest
